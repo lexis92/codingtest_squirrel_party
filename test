@@ -1,0 +1,37 @@
+package org.amalitech.codingtest;
+
+import java.util.Scanner;
+
+public class CodingTest {
+	
+	
+	 public static void main(String[] args) {
+		 //Accept input 
+		 Scanner scan = new Scanner(System.in);
+		 System.out.println("Enter number of cigars");
+		 
+		 //declare number of cigars variable
+		 int cigars = scan.nextInt();
+		 System.out.println("Was the party on a weekday? Enter true or false");
+		 
+		 //declare boolean variable
+		 boolean isWeekday = scan.hasNext();
+		 
+		 
+		//run method for PartyTest
+		 PartyTest(cigars,isWeekday);
+		 
+	
+	 }
+	 public static void PartyTest(int cigars, boolean isWeekday) {
+		
+		     if(cigars >=30 && cigars <= 70 && isWeekday!= false) {
+		    	System.out.println("true");
+		    }
+		    else {
+		    	System.out.println("false");
+		    }
+		 
+	 }
+}
+
